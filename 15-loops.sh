@@ -29,7 +29,7 @@ then
     exit 1 #other than 0
 fi
 
-for package is $@
+for package in $@
 do
     dnf listall $package -y &>>$LOG_FILE_NAME
     if [ $? -ne 0]
