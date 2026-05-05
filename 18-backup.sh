@@ -30,9 +30,9 @@ USAGE(){
     exit 1
 }
 
-mkdir -p /home/ec2-user/shellscript-lags/
+mkdir -p /home/ec2-user/shellscript-logs/
 
-if [ $# -1t 2 ]
+if [ $# -lt 2 ]
 then
         USAGE
     fi
